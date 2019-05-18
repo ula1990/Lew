@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C07DA15C2290A76B006EA7EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA15B2290A76B006EA7EC /* AppDelegate.swift */; };
-		C07DA15E2290A76B006EA7EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA15D2290A76B006EA7EC /* ViewController.swift */; };
+		C07DA15E2290A76B006EA7EC /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA15D2290A76B006EA7EC /* SplashVC.swift */; };
 		C07DA1612290A76B006EA7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07DA15F2290A76B006EA7EC /* Main.storyboard */; };
 		C07DA1642290A76B006EA7EC /* Lew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C07DA1622290A76B006EA7EC /* Lew.xcdatamodeld */; };
 		C07DA1662290A76C006EA7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07DA1652290A76C006EA7EC /* Assets.xcassets */; };
 		C07DA1692290A76C006EA7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07DA1672290A76C006EA7EC /* LaunchScreen.storyboard */; };
 		C07DA1742290A76D006EA7EC /* LewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA1732290A76D006EA7EC /* LewTests.swift */; };
 		C07DA17F2290A76D006EA7EC /* LewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA17E2290A76D006EA7EC /* LewUITests.swift */; };
+		C07DA1922290A84C006EA7EC /* MainUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA1912290A84C006EA7EC /* MainUIImageView.swift */; };
+		C07DA1972290A903006EA7EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA1962290A903006EA7EC /* Constants.swift */; };
+		C07DA19B2290AD29006EA7EC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA19A2290AD29006EA7EC /* MainVC.swift */; };
+		C07DA19E2290AEF3006EA7EC /* MainUITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DA19D2290AEF3006EA7EC /* MainUITabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 /* Begin PBXFileReference section */
 		C07DA1582290A76B006EA7EC /* Lew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07DA15B2290A76B006EA7EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C07DA15D2290A76B006EA7EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C07DA15D2290A76B006EA7EC /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		C07DA1602290A76B006EA7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C07DA1632290A76B006EA7EC /* Lew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lew.xcdatamodel; sourceTree = "<group>"; };
 		C07DA1652290A76C006EA7EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		C07DA17A2290A76D006EA7EC /* LewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07DA17E2290A76D006EA7EC /* LewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LewUITests.swift; sourceTree = "<group>"; };
 		C07DA1802290A76D006EA7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07DA1912290A84C006EA7EC /* MainUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIImageView.swift; sourceTree = "<group>"; };
+		C07DA1962290A903006EA7EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C07DA19A2290AD29006EA7EC /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C07DA19D2290AEF3006EA7EC /* MainUITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,10 @@
 		C07DA15A2290A76B006EA7EC /* Lew */ = {
 			isa = PBXGroup;
 			children = (
-				C07DA15B2290A76B006EA7EC /* AppDelegate.swift */,
-				C07DA15D2290A76B006EA7EC /* ViewController.swift */,
+				C07DA1982290A923006EA7EC /* Common */,
+				C07DA1952290A8C8006EA7EC /* Application */,
+				C07DA1932290A85B006EA7EC /* SubClasses */,
+				C07DA18C2290A79B006EA7EC /* Modules */,
 				C07DA15F2290A76B006EA7EC /* Main.storyboard */,
 				C07DA1652290A76C006EA7EC /* Assets.xcassets */,
 				C07DA1672290A76C006EA7EC /* LaunchScreen.storyboard */,
@@ -126,6 +136,80 @@
 				C07DA1802290A76D006EA7EC /* Info.plist */,
 			);
 			path = LewUITests;
+			sourceTree = "<group>";
+		};
+		C07DA18C2290A79B006EA7EC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA18D2290A7AA006EA7EC /* Splash */,
+				C07DA19C2290AD42006EA7EC /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C07DA18D2290A7AA006EA7EC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA18E2290A7BB006EA7EC /* ViewControllers */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C07DA18E2290A7BB006EA7EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA15D2290A76B006EA7EC /* SplashVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C07DA1932290A85B006EA7EC /* SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA1942290A871006EA7EC /* UIImageView */,
+			);
+			path = SubClasses;
+			sourceTree = "<group>";
+		};
+		C07DA1942290A871006EA7EC /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA1912290A84C006EA7EC /* MainUIImageView.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		C07DA1952290A8C8006EA7EC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA15B2290A76B006EA7EC /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C07DA1982290A923006EA7EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA1992290A93F006EA7EC /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C07DA1992290A93F006EA7EC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA1962290A903006EA7EC /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C07DA19C2290AD42006EA7EC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C07DA19A2290AD29006EA7EC /* MainVC.swift */,
+				C07DA19D2290AEF3006EA7EC /* MainUITabBar.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C07DA15E2290A76B006EA7EC /* ViewController.swift in Sources */,
+				C07DA1972290A903006EA7EC /* Constants.swift in Sources */,
+				C07DA19B2290AD29006EA7EC /* MainVC.swift in Sources */,
+				C07DA15E2290A76B006EA7EC /* SplashVC.swift in Sources */,
+				C07DA19E2290AEF3006EA7EC /* MainUITabBar.swift in Sources */,
+				C07DA1922290A84C006EA7EC /* MainUIImageView.swift in Sources */,
 				C07DA15C2290A76B006EA7EC /* AppDelegate.swift in Sources */,
 				C07DA1642290A76B006EA7EC /* Lew.xcdatamodeld in Sources */,
 			);
